@@ -1,0 +1,2 @@
+# dummyjson
+Integração utilizando dummyjson
