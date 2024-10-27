@@ -1,3 +1,5 @@
+## Projeto desenvolvido com o objetivo de consumir a API dummyjson.
+
 # flutterando_api
 
 A new Flutter project.
