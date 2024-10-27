@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutterando_api/data/http/http_client.dart';
-import 'package:flutterando_api/pages/home/stores/produto_store.dart';
-import 'package:flutterando_api/repositories/produto_repository.dart';
+import 'package:flutterando_api/listagem/external/http/http_client.dart';
+import 'package:flutterando_api/listagem/presenter/stores/produto_store.dart';
+import 'package:flutterando_api/listagem/Infraestruture/repositories/produto_repository.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

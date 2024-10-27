@@ -1,9 +1,9 @@
 import 'dart:convert';
 
-import 'package:flutterando_api/data/http/http_client.dart';
-import 'package:flutterando_api/data/models/produto_model.dart';
+import 'package:flutterando_api/listagem/external/http/http_client.dart';
+import 'package:flutterando_api/listagem/domain/models/produto_model.dart';
 
-import '../data/http/exceptions.dart';
+import '../../external/http/exceptions.dart';
 
 abstract class IProdutoRepository{
   Future<List<ProdutoModel>>getProdutos();

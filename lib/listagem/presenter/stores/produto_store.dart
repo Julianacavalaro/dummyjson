@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutterando_api/data/http/exceptions.dart';
-import 'package:flutterando_api/data/models/produto_model.dart';
-import 'package:flutterando_api/repositories/produto_repository.dart';
+import 'package:flutterando_api/listagem/external/http/exceptions.dart';
+import 'package:flutterando_api/listagem/domain/models/produto_model.dart';
+import 'package:flutterando_api/listagem/Infraestruture/repositories/produto_repository.dart';
 
 class ProdutoStore {
   final IProdutoRepository repository;
