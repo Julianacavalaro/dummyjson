@@ -8,6 +8,8 @@ class ProdutoModel {
   final int stock;
   final List<String> tags;
   final List<String> images;
+    final String thumbnail;
+
 
   ProdutoModel(
       {required this.title,
@@ -18,7 +20,8 @@ class ProdutoModel {
       required this.rating,
       required this.stock,
       required this.tags,
-      required this.images});
+      required this.images,
+      required this.thumbnail});
 
   factory ProdutoModel.fromMap(Map<String, dynamic> map) {
     return ProdutoModel(
@@ -26,10 +29,11 @@ class ProdutoModel {
         description: map['description'],
         category: map['category'],
         price: map['price'] * 1.0,
-        discountPercentage: map['discountPercentage'],
-        rating: map['rating'],
+        discountPercentage: map['discountPercentage']* 1.0,
+        rating: map['rating'] * 1.0,
         stock: map['stock'],
         tags: List<String>.from((map['tags'] as List)),
-        images: List<String>.from((map['images'] as List)));
+        images: List<String>.from((map['images'] as List)),
+        thumbnail: map['thumbnail']);
   }
 }

@@ -17,7 +17,7 @@ class ProdutoRepository implements IProdutoRepository{
   Future<List<ProdutoModel>> getProdutos() async {
     final response = await client.get(url: 'https://dummyjson.com/products',
     );
-    if(response.status ==200){
+    if(response.statusCode == 200){
       final List<ProdutoModel> produtos =[];
 
       final body = jsonDecode(response.body);
@@ -30,7 +30,7 @@ class ProdutoRepository implements IProdutoRepository{
 
       return produtos;
     }
-    else if (response.status == 404){
+    else if (response.statusCode == 404){
       throw NotFoundException('A url informada n');
     }else {
       throw Exception('Não foi possível carregar o produto');
