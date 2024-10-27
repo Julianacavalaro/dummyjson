@@ -31,9 +31,9 @@ class ProdutoRepository implements IProdutoRepository{
       return produtos;
     }
     else if (response.status == 404){
-      throw NotFoundException('erro');
+      throw NotFoundException('A url informada n');
     }else {
-      throw Exception();
+      throw Exception('Não foi possível carregar o produto');
     }
   }
   
